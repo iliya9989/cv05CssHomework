@@ -1,0 +1,144 @@
+* {
+  font-family: sans-serif;
+  text-align: center;
+}
+body,
+.layout {
+  height: 100%;
+}
+html {
+  height: 1300px;
+}
+body {
+  background-color: #202021f2;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.layout {
+  display: flex;
+}
+.menu {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu-item {
+  background-color: lightgray;
+  color: #282626;
+  border: 5px solid whitesmoke;
+  border-radius: 10px;
+  margin: 10px;
+}
+.menu-main {
+  height: 50%;
+}
+.menu-main .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 14.2%;
+}
+.menu-main i {
+  margin: 0 4px;
+}
+.menu-footer {
+  width: 50%;
+  text-align: center;
+}
+.mf-item {
+  margin: 0 10px;
+  display: inline-block;
+  width: 10%;
+}
+
+.main {
+  width: 85%;
+  color: whitesmoke;
+}
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  border: 5px solid whitesmoke;
+  border-radius: 10px;
+  font-size: 3rem;
+}
+.kpis {
+  display: flex;
+  height: 5%;
+  justify-content: space-around;
+}
+.kpi-item {
+  width: 25%;
+  border: 5px solid whitesmoke;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 1%;
+  margin: 0.5% 0;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 85%;
+}
+.card {
+  display: inline-block;
+  border: whitesmoke 5px solid;
+  border-radius: 10px;
+  overflow: auto;
+}
+.card-video {
+  width: 75%;
+  height: 50%;
+}
+.card-performance {
+  width: 22%;
+  height: 50%;
+}
+.spinner {
+  position: relative;
+  top: 79.5%;
+  left: 30%;
+  width: 40%;
+  height: 20%;
+  border: 1px solid whitesmoke;
+  border-radius: 100%;
+  background-color: grey;
+  animation: bouncing 3s infinite;
+}
+.lower-card {
+  height: 19.5%;
+}
+.card-usage,.card-app, .card-settings {
+  width: 32%;
+}
+.card-recent {
+  width: 24%;
+}
+.card-image {
+  width: 74%;
+}
+.card-footer {
+  padding-top: 2%;
+  width: 100%;
+  height: 5%;
+}
+
+@keyframes bouncing {
+  0%,20%,50%,80%,100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-150%);
+  }
+  60% {
+    transform: translateY(-50%);
+  }
+
+}
