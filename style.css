@@ -1,5 +1,5 @@
 * {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: center;
 }
 body,
@@ -31,6 +31,11 @@ img {
   border: 5px solid whitesmoke;
   border-radius: 10px;
   margin: 10px;
+  transition: all 1s;
+}
+.menu-item:hover {
+  background-color: darkgreen;
+  transition: all 1s;
 }
 .menu-main {
   height: 50%;
@@ -115,7 +120,9 @@ img {
 .lower-card {
   height: 19.5%;
 }
-.card-usage,.card-app, .card-settings {
+.card-usage,
+.card-app,
+.card-settings {
   width: 32%;
 }
 .card-recent {
@@ -131,7 +138,11 @@ img {
 }
 
 @keyframes bouncing {
-  0%,20%,50%,80%,100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
   40% {
@@ -140,5 +151,4 @@ img {
   60% {
     transform: translateY(-50%);
   }
-
 }
